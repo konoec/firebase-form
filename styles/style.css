@@ -118,6 +118,27 @@ button:active {
     transform: translateY(0);
 }
 
+.error-message {
+    color: var(--error-color);
+    font-size: 0.75rem;
+    position: absolute;
+    bottom: -1.25rem;
+    left: 0.25rem;
+    display: none;
+}
+
+input.error {
+    border-color: var(--error-color);
+}
+
+input.error ~ label {
+    color: var(--error-color);
+}
+
+input.error ~ .error-message {
+    display: block;
+}
+
 @media (max-width: 480px) {
     .signup-form {
         padding: 1.5rem;
